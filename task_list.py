@@ -18,13 +18,23 @@ tasks = [
 
 # print list of completed tasks
 
-def completed_tasks(list):
-    completed = []
-    for item in list:
-        if item["completed"] == True:
-            completed.append(tasks)
-    return completed
+# def completed_tasks(list):
+#     completed = []
+#     for item in list:
+#         if item["completed"] == True:
+#             completed.append(tasks)
+#     return completed
 
-print(completed_tasks(tasks))
+# print(completed_tasks(tasks))
+
+# print task descriptions
+
+def task_descriptions(list):
+    descriptions = []
+    for item in list:
+        descriptions.append(item["description"])
+    return descriptions
+
+print(task_descriptions(tasks))
 
 
