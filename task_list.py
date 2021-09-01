@@ -7,11 +7,24 @@ tasks = [
 ]
 # print list of uncompleted tasks
 
-def uncompleted_tasks(list):
-    uncompleted = []
-    for item in list:
-        if item["completed"] == False:
-            uncompleted.append(tasks)
-    return uncompleted
+# def uncompleted_tasks(list):
+#     uncompleted = []
+#     for item in list:
+#         if item["completed"] == False:
+#             uncompleted.append(tasks)
+#     return uncompleted
 
-print(uncompleted_tasks(tasks))
+# print(uncompleted_tasks(tasks))
+
+# print list of completed tasks
+
+def completed_tasks(list):
+    completed = []
+    for item in list:
+        if item["completed"] == True:
+            completed.append(tasks)
+    return completed
+
+print(completed_tasks(tasks))
+
+
