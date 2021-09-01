@@ -29,12 +29,21 @@ tasks = [
 
 # print task descriptions
 
-def task_descriptions(list):
-    descriptions = []
+# def task_descriptions(list):
+#     descriptions = []
+#     for item in list:
+#         descriptions.append(item["description"])
+#     return descriptions
+
+# print(task_descriptions(tasks))
+
+# Print a list of tasks where time_taken is at least a given time
+
+def given_time(list, time):
+    given_time_tasks = []
     for item in list:
-        descriptions.append(item["description"])
-    return descriptions
-
-print(task_descriptions(tasks))
-
+        if item["time_taken"] >= time:
+            given_time_tasks.append(item)
+    return given_time_tasks
+print(given_time(tasks, 10))
 
