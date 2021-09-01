@@ -5,3 +5,13 @@ tasks = [
     { "description": "Feed Cat", "completed": False, "time_taken": 5 },
     { "description": "Walk Dog", "completed": True, "time_taken": 60 },
 ]
+# print list of uncompleted tasks
+
+def uncompleted_tasks(list):
+    uncompleted = []
+    for item in list:
+        if item["completed"] == False:
+            uncompleted.append(tasks)
+    return uncompleted
+
+print(uncompleted_tasks(tasks))
